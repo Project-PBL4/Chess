@@ -1,0 +1,63 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(/FrontEnd/assets/img/Background_img.jpg) 0% 0% / cover no-repeat fixed;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px;
+    padding: 5px 30px;
+}
+
+.nav-logo{
+}
+
+.icon-bar{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.link-home{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin-left: 28px;
+}
+
+.nav-item-right{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.login_btn{
+   padding: 10px; 
+   background-color: var(--yellow-color);
+   color: var(--text-color);
+   font-weight: 500;
+   border: 0;
+   border-radius: 6px;
+   font-size: 1.6rem;
+   cursor: pointer;
+}
+
+.change-language_btn{
+    display: flex;
+    flex-direction: row;
+    padding: 10px; 
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.flag-img{
+    width: 2rem;
+    height: 1.4rem;
+    margin-right: 4px;
+}

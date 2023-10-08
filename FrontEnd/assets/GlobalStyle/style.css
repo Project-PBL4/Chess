@@ -1,4 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root{
+    --text-color:#E2E2E2;
+    --yellow-color:#f8cb43;
+    --red-color: #9C0D05;
+}
+
+body {
+    font-family: Poppins;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-rendering: optimizeSpeed;
+}
+
+button, input{
+    border: unset;
 }
