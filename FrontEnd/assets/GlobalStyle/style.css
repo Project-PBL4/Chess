@@ -12,6 +12,7 @@ html {
     --text-color:#E2E2E2;
     --yellow-color:#f8cb43;
     --red-color: #9C0D05;
+    --background-color:#232323;
 }
 
 body {
@@ -23,4 +24,8 @@ body {
 
 button, input{
     border: unset;
+}
+
+iframe{
+    border: 0;
 }
