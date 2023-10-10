@@ -15,7 +15,8 @@
             <a class="link-home" href="/FrontEnd/Page/Lobby/index.html">CoTuong</a>
         </div>
         <div class="nav-item-right">
-            <button class="login_btn">Đăng Nhập</button>
+            <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" class="login_btn open" onclick=changeToLobby()>Đăng Nhập</a>
+            <a href="/FrontEnd/Page/Lobby/Body/index.html" target="Body" class="lobby_btn" onclick=changeToLogin()>Vào Sảnh Đợi</a>
             <button class="change-language_btn">
                 <img class="flag-img" src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png" alt="">
                 Tiếng Việt
@@ -23,4 +24,5 @@
         </div>
     </div>
 </body>
+    <script src="./JS/changeContent.js"></script>   
 </html>

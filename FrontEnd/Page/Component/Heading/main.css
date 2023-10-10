@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: space-between;
     background: url(/FrontEnd/assets/img/Background_img.jpg) 0% 0% / cover no-repeat fixed;    
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
     padding: 5px 30px;
-    z-index: 99;
 }
+
+
 
 .nav-logo{
 }
@@ -31,15 +31,17 @@
 
 
 
-.login_btn{
-   padding: 8px 10px; 
-   background-color: var(--yellow-color);
-   color: var(--text-color);
-   font-weight: 500;
-   border: 0;
-   border-radius: 6px;
-   font-size: 1.6rem;
-   cursor: pointer;
+.login_btn, .lobby_btn{
+    display: none;
+    padding: 8px 10px; 
+    background-color: var(--yellow-color);
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .change-language_btn{
@@ -60,4 +62,11 @@
     width: 2rem;
     height: 1.4rem;
     margin-right: 4px;
+}
+
+
+
+
+.open{
+    display: flex;
 }
