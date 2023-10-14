@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css" />
+        <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="change_form">
+                    <button class="login_btn active" onclick="changeToLogin()">Đăng nhập</button>
+                    <button class="register_btn" onclick="changeToRegister()">Đăng kí</button>
+                </div>
+                <form action="" name="login_form" class="login_form">
+                    <div class="info">
+                        <label class="info_lable" for="username">Tên tài khoản hoặc email</label>
+                        <input
+                            class="username"
+                            type="text"
+                            name="username"
+                            placeholder="Tên tài khoản"
+                        />
+                    </div>
+                    <div class="info">
+                        <label class="info_lable" for="password">Mật mã</label>
+                        <input
+                            class="password"
+                            type="password"
+                            name="password"
+                            placeholder="Mật mã"
+                        />
+                    </div>
+                    <button type="submit" class="login_submit">Đăng nhập</button>
+                    <a class="forget-password">Quên mật khẩu?</a>
+                </form>
+
+                <form action="" name="register_form" class="register_form open">
+                    <div class="info">
+                        <label class="info_lable" for="username">Tên tài khoản</label>
+                        <input
+                            class="username"
+                            type="text"
+                            name="username"
+                            placeholder="Tên tài khoản"
+                        />
+                    </div>
+                    <div class="info">
+                        <label class="info_lable" for="username">Tên tài khoản</label>
+                        <input
+                            class="username"
+                            type="text"
+                            name="username"
+                            placeholder="Tên tài khoản"
+                        />
+                    </div>
+                    <div class="info">
+                        <label class="info_lable" for="password">Mật mã</label>
+                        <input
+                            class="password"
+                            type="password"
+                            name="password"
+                            placeholder="Mật mã"
+                        />
+                    </div>
+                    <div class="info wrapper-chosing-nation">
+                        <label class="info" for="nation">Quốc gia</label>
+                        <input class="nation" type="text" placeholder="Quốc gia/Khu vực" />
+                        <i class="icon-down fa-solid fa-angle-down"></i>
+                        <div class="select-nations">
+                            <span class="nation-option" readonly type="text" value="VietNam">Vietnam</span>
+                            <span class="nation-option" readonly type="text" value="Japanese">Japanese</span>
+                            <span class="nation-option" readonly type="text" value="Chinese">Chinese</span>
+                            <span class="nation-option" readonly type="text" value="ThaiLan">Thailand</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="register_submit">Đăng kí</button>
+                </form>
+
+                <div class="link_list">
+                    <a href="#" class="link-webchat">
+                        <button class="wrapper_icon-webchat">
+                            <i class="icon-webchat fa-regular fa-comments"></i>
+                        </button>
+                    </a>
+                    <a href="#" class="link-google">
+                        <button class="wrapper_icon-google">
+                            <img class="icon-google" src="/FrontEnd/assets/img/google.svg" alt="" />
+                        </button>
+                    </a>
+                    <a href="#" class="link-facebook">
+                        <i class="icon-facebook fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="./JS/changeForm.js"></script>
+    </body>
 </html>

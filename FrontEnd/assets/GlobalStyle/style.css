@@ -9,7 +9,7 @@ html {
 }
 
 :root{
-    --text-color:#E2E2E2;
+    --text-color:#eaeaea;
     --yellow-color:#f8cb43;
     --red-color: #9C0D05;
     --background-color:#232323;
@@ -24,8 +24,14 @@ body {
 
 button, input{
     border: unset;
+    cursor: pointer;
 }
 
 iframe{
     border: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
