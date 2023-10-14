@@ -15,7 +15,7 @@
                     <button class="login_btn active" onclick="changeToLogin()">Đăng nhập</button>
                     <button class="register_btn" onclick="changeToRegister()">Đăng kí</button>
                 </div>
-                <form action="" name="login_form" class="login_form">
+                <form action="" name="login_form" class="login_form open">
                     <div class="info">
                         <label class="info_lable" for="username">Tên tài khoản hoặc email</label>
                         <input
@@ -38,7 +38,7 @@
                     <a class="forget-password">Quên mật khẩu?</a>
                 </form>
 
-                <form action="" name="register_form" class="register_form open">
+                <form action="" name="register_form" class="register_form">
                     <div class="info">
                         <label class="info_lable" for="username">Tên tài khoản</label>
                         <input
@@ -69,12 +69,12 @@
                     <div class="info wrapper-chosing-nation">
                         <label class="info" for="nation">Quốc gia</label>
                         <input class="nation" type="text" placeholder="Quốc gia/Khu vực" />
-                        <i class="icon-down fa-solid fa-angle-down"></i>
+                        <i class="icon-down fa-solid fa-angle-down" onclick="openAndCloseNation()"></i>
                         <div class="select-nations">
-                            <span class="nation-option" readonly type="text" value="VietNam">Vietnam</span>
-                            <span class="nation-option" readonly type="text" value="Japanese">Japanese</span>
-                            <span class="nation-option" readonly type="text" value="Chinese">Chinese</span>
-                            <span class="nation-option" readonly type="text" value="ThaiLan">Thailand</span>
+                            <span class="nation-option" type="text" value="Vietnam" onclick="selectNation(event)">Vietnam</span>
+                            <span class="nation-option" type="text" value="Japanese" onclick="selectNation(event)">Japanese</span>
+                            <span class="nation-option" type="text" value="Chinese" onclick="selectNation(event)">Chinese</span>
+                            <span class="nation-option" type="text" value="Thailand" onclick="selectNation(event)">Thailand</span>
                         </div>
                     </div>
                     <button type="submit" class="register_submit">Đăng kí</button>
@@ -98,5 +98,6 @@
             </div>
         </div>
         <script src="./JS/changeForm.js"></script>
+        <script src="./JS/selectNation.js"></script>
     </body>
 </html>
