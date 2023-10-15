@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #headingWrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 99;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px;
-        }
-        #headingWrapper iframe{
-            height: 100%;
-        }
-
-        #bodyWrapper {
-            position: fixed;
-            top: 60px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-        }
-    </style>
-</head>
-<body>
-    <div id="headingWrapper">
-        <iframe name="Heading" src="../Component/Heading/index.html" style="width: 100%; height: 60px; border: none;"></iframe>
-    </div>
-    <div id="bodyWrapper">
-        <iframe name="Body" src="./Body/index.html" style="width: 100%; height: 100%; border: none;"></iframe>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="headingWrapper">
+            <!-- option -->
+            <div id="list-options-user">
+                <a href="/FrontEnd/Page/Profile/index.html" target="Body" onclick="closeOption()" id="option-user">
+                    Hồ sơ thông tin
+                </a>
+                <a href="#" id="option-user" onclick="closeOption()"> Bạn </a>
+                <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" onclick="closeOption()" id="option-user"
+                    >Đăng xuất</a
+                >
+            </div>
+            <iframe name="Heading" src="../Component/Heading/index.html"> </iframe>
+        </div>
+        <div id="bodyWrapper">
+            <iframe name="Body" src="./Body/index.html" style="height: 100%"></iframe>
+        </div>
+        <script src="/FrontEnd/Page/Component/Heading/JS/showOptions.js"></script>
+    </body>
 </html>

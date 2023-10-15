@@ -1,0 +1,45 @@
+#headingWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    max-height: 100px;
+}
+#headingWrapper iframe {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 6px;
+    height: 60px;
+}
+
+#bodyWrapper {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* option user */
+#list-options-user{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 99999;
+    top: 56px;
+    right: 20px;
+}
+
+#option-user{
+    background-color: #000;
+    color: var(--text-color);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+#option-user:hover{
+    background-color: var(--yellow-color);
+    color: var(--background-color);
+}

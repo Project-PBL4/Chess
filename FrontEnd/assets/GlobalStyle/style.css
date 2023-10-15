@@ -29,6 +29,8 @@ button, input{
 
 iframe{
     border: 0;
+    overflow: visible !important;
+    width: 100%;
 }
 
 a{

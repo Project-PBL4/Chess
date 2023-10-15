@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="nav-logo">
-            <i class="icon-bar fa-solid fa-bars"></i>
-            <a class="link-home" href="/FrontEnd/Page/Lobby/index.html">CoTuong</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css" />
+        <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="nav-logo">
+                <i class="icon-bar fa-solid fa-bars"></i>
+                <a class="link-home" href="/FrontEnd/Page/Lobby/index.html">CoTuong</a>
+            </div>
+            <div class="nav-item-right">
+                <!-- <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" class="login_link open" onclick=changeToLobby()>Đăng Nhập</a> -->
+                <a
+                    href="/FrontEnd/Page/Lobby/Body/index.html"
+                    target="Body"
+                    class="lobby_link"
+                    onclick="changeToLogin()"
+                    >Vào Sảnh Đợi</a
+                >
+                <button class="change-language_btn">
+                    <img
+                        class="flag-img"
+                        src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png"
+                        alt=""
+                    />
+                    Tiếng Việt
+                </button>
+                <button href="/FrontEnd/Page/Profile/index.html" target="Body" class="profile-user" onclick="showOptions()">
+                    <img
+                        class="user_img"
+                        src="/FrontEnd/assets/img/User-avatar.jpg"
+                        alt=""
+                        srcset=""
+                    />
+                </button>
+            </div>
         </div>
-        <div class="nav-item-right">
-            <!-- <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" class="login_link open" onclick=changeToLobby()>Đăng Nhập</a> -->
-            <a href="/FrontEnd/Page/Profile/index.html" target="Body" class="profile-user" onclick=changeToLobby()>
-                <img class="user_img" src="/FrontEnd/assets/img/User-avatar.jpg" alt="" srcset="">
-            </a>
-            
-            <a href="/FrontEnd/Page/Lobby/Body/index.html" target="Body" class="lobby_link" onclick=changeToLogin()>Vào Sảnh Đợi</a>
-            <button class="change-language_btn">
-                <img class="flag-img" src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png" alt="">
-                Tiếng Việt
-            </button>
-        </div>
-    </div>
-</body>
-    <script src="./JS/changeContent.js"></script>   
+    </body>
+    <script src="./JS/changeContent.js"></script>
+    <script src="./JS/showOptions.js"></script>
 </html>
