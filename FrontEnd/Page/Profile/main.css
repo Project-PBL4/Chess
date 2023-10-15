@@ -1,0 +1,140 @@
+body{
+    background-image: url(/FrontEnd/assets/img/Black_background_img.jpg);
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 1000px;
+    background-color: #292927;
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.avatar{
+    padding-right: 20px;
+}
+
+.user-img{
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 50%;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 380px;
+}
+
+.name{
+    font-size: 3rem;
+    padding:0 0 10px;
+}
+
+.point{
+    font-size: 2rem;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.flag-img{
+    max-width: 30px;
+    max-height: 20px;
+    margin-left: 20px;
+}
+
+.link-update{
+    color: var(--red-color);
+    font-size: 1.8rem;
+    padding: 10px 0;
+}
+
+.society{
+    padding: 20px 0;
+}
+
+.society span{
+    margin-right: 20px;
+}
+
+.friend{
+    font-size: 1.8rem;
+}
+
+.block-notify{
+
+}
+
+.block{
+
+}
+
+.joining-date{
+    padding: 30px 0;
+    font-size: 2rem;
+
+}
+
+.award{
+    margin: 10px 20px;
+}
+
+.award-top{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.award-bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.wrapper-icon{
+    padding: 26px;
+    margin: 6px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9e9e9e;
+    border-radius: 50%;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+.story{
+    font-size: 2.2rem;
+    color: #bbbbbb;
+}
+
+.statistic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.statistic .info {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+

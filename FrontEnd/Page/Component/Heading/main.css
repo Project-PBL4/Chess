@@ -29,7 +29,7 @@
 
 
 
-.login_btn, .lobby_btn{
+.login_link, .lobby_link{
     display: none;
     padding: 8px 10px; 
     background-color: var(--yellow-color);
@@ -40,6 +40,8 @@
     font-size: 1.8rem;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .change-language_btn{
@@ -63,8 +65,22 @@
 }
 
 
+.profile-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.user_img{
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+
 
 
 .open{
     display: flex;
 }
+

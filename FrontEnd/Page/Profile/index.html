@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-    <frameset rows="50, *" frameborder="0">
-        <frame name="Heading" src="../Component/Heading/index.html"></frame>
-        <frame name="Body" src="./Content/index.html"></frame>
-    </frameset>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="avatar">
+                    <img class="user-img" src="/FrontEnd/assets/img/User-avatar.jpg" alt="" srcset="" />
+                </div>
+                <div class="biography">
+                    <span class="name">Duc Van</span>
+                    <div class="point">
+                        1200
+                        <img class="flag-img" src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png" alt="" srcset="" />
+                    </div>
+                    <a href="#" class="link-update">Sửa hồ sơ thông tin</a>
+                    <div class="society">
+                        <span class="friend">2 Bạn</span>
+                        <span class="block-notify">1 Tắt thông báo</span>
+                        <span class="block">0 Đã chặn</span>
+                    </div>
+                    <span class="joining-date">Thành viên kể từ: 15 October 2023</span>
+                    <div class="story">Phát ngôn: Bá zô đây mà núc</div>
+                </div>
+                <div class="award">
+                    <div class="award-top">
+                        <p class="wrapper-icon"><i class="icon fa-solid fa-earth-americas"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-regular fa-calendar-days"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-solid fa-bolt"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-regular fa-clock"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-regular fa-star"></i></p>
+                    </div>
+                    <div class="award-bottom">
+                        <circle class="wrapper-icon"><i class="icon fa-regular fa-chess-pawn"></i></circle>
+                        <p class="wrapper-icon"><i class="icon fa-solid fa-chess-knight"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-regular fa-chess-rook"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-solid fa-rocket"></i></p>
+                        <p class="wrapper-icon"><i class="icon fa-solid fa-crown"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic">
+                <div class="info total-match">
+                    <p class="count">0</p>
+                    Tổng số ván
+                </div>
+                <div class="info total-vitory">
+                    <p class="count">0</p>
+                    Tổng số thắng
+                </div>
+                <div class="info total-default">
+                    <p class="count">0</p>
+                    Tổng số thua
+                </div>
+                <div class="info total-draw">
+                    <p class="count">0</p>
+                    Tổng số huề
+                </div>
+                <div class="info victory-percent">
+                    <p class="count">0%</p>
+                    Tỷ lệ thắng
+                </div>
+                <div class="info avrage-rank">
+                    <p class="count">0</p>
+                    Xếp hạng đối thủ trung bình
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
