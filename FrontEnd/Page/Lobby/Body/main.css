@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     background: url(/FrontEnd/assets/img/Background_img.jpg);
@@ -25,14 +26,155 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 }
 
-
 .content iframe {
     height: 100%;
     width: 100%;
 }
 
-.navigation iframe {    
+.navigation iframe {
     height: 100%;
     width: 100%;
 }
 
+.show-room_modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(139, 139, 139, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.content_modal {
+    position: relative;
+    background-color: var(--background-color);
+    height: 500px;
+    width: 530px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.close_btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    color: #333;
+}
+
+.close-icon {
+    font-size: 2.6rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 16px;
+}
+
+.list-rooms {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.room {
+    background-color: #333;
+    padding: 10px;
+    margin: 20px 0 0;
+    border-radius: 4px;
+}
+
+.infor-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infor-user {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.flag{
+    width: 26px;
+    height: 18px;
+    position: absolute;
+    right: 84px;
+    bottom: -4px;
+}
+
+.avatar-user {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.description {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description span{
+    margin-top: 4px;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.rank {
+    font-size: 1.4rem;
+}
+
+.join_btn {
+    color: var(--text-color);
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    margin: 4px;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    font-size: 1.6rem;
+}
+
+.join_btn:hover{
+    background-color: #333;
+}
+
+.info-bottom {
+    margin: 10px 0 0;
+}
+
+.info-bottom span{
+    margin: 0 60px 0 4px;
+}
+
+.info-bottom i {
+    margin-right: 10px;
+}
+
+.time {
+}
+
+.clock-icon {
+
+}
+
+.point {
+}
+
+.star-icon {
+    color: var(--yellow-color);
+}

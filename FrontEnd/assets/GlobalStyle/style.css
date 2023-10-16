@@ -8,11 +8,11 @@ html {
     font-size: 62.5%;
 }
 
-:root{
-    --text-color:#eaeaea;
-    --yellow-color:#f8cb43;
-    --red-color: #9C0D05;
-    --background-color:#232323;
+:root {
+    --text-color: #eaeaea;
+    --yellow-color: #f8cb43;
+    --red-color: #9c0d05;
+    --background-color: #232323;
 }
 
 body {
@@ -22,18 +22,20 @@ body {
     text-rendering: optimizeSpeed;
 }
 
-button, input{
+button,
+input {
     border: unset;
     cursor: pointer;
 }
 
-iframe{
+iframe {
     border: 0;
     overflow: visible !important;
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 
