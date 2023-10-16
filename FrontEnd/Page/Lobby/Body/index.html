@@ -17,9 +17,9 @@
                 <iframe name="navigation" src="./Navigation/index.html"></iframe>
             </div>
             <!-- Chose room -->
-            <div class="show-room_modal">
-                <div class="content_modal">
-                    <button class="close_btn">
+            <div id="show-room_modal" onclick="closeModal(event)">
+                <div class="content_modal" >
+                    <button class="close_btn" onclick="closeChosingRoomModal()">
                         <i class="close-icon fa-solid fa-x"></i>
                     </button>
                     <div class="title">Tham gia trò chơi</div>
@@ -244,5 +244,6 @@
                 </div>
             </div>
         </div>
+        <script src="./JS/closeModal.js"></script>
     </body>
 </html>
