@@ -5,8 +5,8 @@ function closeChosingRoomModal() {
 
 function closeModal(event) {
     const modal = document.getElementById("show-room_modal");
-    const contenMmodal = document.getElementById("content_modal");
-    if (event.target !== contenMmodal) {
+    const contentModal = document.querySelector(".content_modal");
+    if (!contentModal.contains(event.target)) {
         modal.style.display = "none";
     }
 }
