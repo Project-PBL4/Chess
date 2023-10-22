@@ -1,4 +1,5 @@
 function openChosingRoomModal() {
-    const modal = window.parent.document.getElementById('show-room_modal');
+    const modal = window.parent.document.getElementById('room_modal');
     modal.style.display = "flex";
 }
+

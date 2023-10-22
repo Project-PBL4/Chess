@@ -1,10 +1,82 @@
-.wrapper{
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
-.img-desc{
-    height: 560px;
+#chessboard-desc_img {
+    display: flex;
+    height: 540px;
     width: 500px;
+}
+
+#chessboard {
+    position: relative;
+    width: 650px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board {
+    position: absolute;
+    top: 28px;
+    height: 520px;
+    width: 500px;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cell {
+    height: 52px;
+    float: left;
+    width: 51px;
+    margin: 3px 3px;
+    position: relative;
+}
+
+.isHaving-chess .floor {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgb(56, 56, 56);
+    box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 5px, rgba(255, 255, 255, 0.3) 0px 4px 2px 0px inset,
+        rgba(0, 0, 0, 0.3) 0px -3px 2px 0px inset;
+}
+
+.isHaving-chess .red-color{
+    background-color: var(--red-color);
+}
+
+.chess{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chess img{
+    height: 30px;
+    width: 30px;
 }
