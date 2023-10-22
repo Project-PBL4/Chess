@@ -9,17 +9,26 @@
 
 /* .nav-logo{
 } */
-
+.nav_btn{
+    padding: 8px 12px;
+    background-color: transparent;
+    border-radius: 6px;
+}
 .icon-bar{
     color: var(--text-color);
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav_btn:hover{
+    background: rgba(255, 255, 255, 0.07);
 }
 
 .link-home{
     text-decoration: none;
     font-size: 2.2rem;
     color: var(--text-color);
-    margin-left: 28px;
+    margin-left: 20px;
 }
 
 .nav-item-right{
