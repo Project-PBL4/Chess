@@ -49,10 +49,10 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--background-color);
+    background-color: #333;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #444;
+    background: var(--background-color);
 }

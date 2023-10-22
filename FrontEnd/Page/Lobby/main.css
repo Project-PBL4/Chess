@@ -9,6 +9,7 @@
 #headingWrapper iframe {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 6px;
     height: 60px;
+    overflow: visible;
 }
 
 #bodyWrapper {
@@ -17,7 +18,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 
@@ -57,4 +58,37 @@
 #option-user:hover{
     background-color: var(--yellow-color);
     color: var(--background-color);
+}
+
+
+/* option navigation */
+#list-option-nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    background: url(/FrontEnd/assets/img/Background_img.jpg);
+    overflow-y: scroll;
+}
+
+.option-nav{
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    cursor: pointer; 
+    color: var(--text-color);   
+}
+
+.option-nav:hover{
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.icon{
+    margin-right: 20px;
+    font-size: 2.2rem;
+}
+
+.title{
+    font-size: 1.8rem;
 }

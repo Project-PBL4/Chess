@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css">
         <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
         <link rel="stylesheet" href="main.css" />
         <title>Document</title>
@@ -19,12 +20,54 @@
                 <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" onclick="closeOption()" id="option-user"
                     >Đăng xuất</a
                 >
-            </div>
-            <!-- option navigation -->
-            
+            </div>            
         </div>
         <div id="bodyWrapper">
             <iframe name="Body" src="./Body/index.html" style="height: 100%"></iframe>
+            
+            <!-- option navigation -->
+            <div id="list-option-nav">
+                <a class="option-nav" href="../Lobby/index.html">
+                    <img class="icon" src="/FrontEnd/assets/img/Chess_icon.svg" alt="">
+                    <p class="title">Thi dấu</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-tv"></i>
+                    <p class="title">Xem</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-message"></i>
+                    <p class="title">Trò chuyện</p>
+                </a>
+                <a class="option-nav">
+                    <img class="icon" src="/FrontEnd/assets/img/Sword_icon.svg" alt="">
+                    <p class="title">Giải đấu</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-puzzle-piece"></i>
+                    <p class="title">Cờ thế</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-magnifying-glass"></i>
+                    <p class="title">Phân tích</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-trophy"></i>
+                    <p class="title">Những cao thủ</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-circle-info"></i>
+                    <p class="title">Cách chơi ?</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-signs-post"></i>
+                    <p class="title">Bài viết</p>
+                </a>
+                <a class="option-nav">
+                    <i class="icon fa-solid fa-hand-holding-hand"></i>
+                    <p class="title">Giúp đỡ</p>
+                </a>
+            </div>
         </div>
         <script src="/FrontEnd/Page/Component/Heading/JS/showOptions.js"></script>
     </body>
