@@ -9,7 +9,7 @@
 
 /* .nav-logo{
 } */
-.nav_btn{
+.sidebar_btn{
     padding: 8px 12px;
     background-color: transparent;
     border-radius: 6px;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.nav_btn:hover{
+.sidebar_btn:hover{
     background: rgba(255, 255, 255, 0.07);
 }
 

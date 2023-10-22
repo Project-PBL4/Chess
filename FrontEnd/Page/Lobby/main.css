@@ -62,7 +62,9 @@
 
 
 /* option navigation */
-#list-option-nav{
+#list-option-sidebar{
+    display: none;
+    flex-direction: column;
     position: absolute;
     left: 0;
     top: 0;
@@ -70,9 +72,10 @@
     width: 260px;
     background: url(/FrontEnd/assets/img/Background_img.jpg);
     overflow-y: scroll;
+    transition: 2s ease-in-out 0s;
 }
 
-.option-nav{
+.option-sidebar{
     display: flex;
     align-items: center;
     padding: 24px;
@@ -80,7 +83,7 @@
     color: var(--text-color);   
 }
 
-.option-nav:hover{
+.option-sidebar:hover{
     background: rgba(255, 255, 255, 0.07);
 }
 
