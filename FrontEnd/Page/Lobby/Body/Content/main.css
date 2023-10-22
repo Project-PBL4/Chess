@@ -73,6 +73,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.isHaving-chess .chess{    
     cursor: pointer;
 }
 
