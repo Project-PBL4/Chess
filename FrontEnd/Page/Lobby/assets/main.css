@@ -26,7 +26,7 @@
     position: fixed;
     display: none;
     flex-direction: column;
-    z-index: 99999;
+    z-index: 9;
     top: 62px;
     right: 20px;
 }
@@ -97,6 +97,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 999999;
 }
 
 .notification {
@@ -167,4 +168,5 @@
     color: var(--red-color);
     border-radius: 4px;
     margin-right: 10px;
+    font-weight: 600;
 }
