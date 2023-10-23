@@ -1,4 +1,8 @@
 function closeNotification(button) {
     let notification = button.parentNode;
-    notification.style.display = "none";
+    notification.classList.add("animate-close");
+    
+    setTimeout(function() {
+        notification.style.display = "none";
+    }, 500);
 }
