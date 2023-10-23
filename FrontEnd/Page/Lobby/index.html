@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css" />
         <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
         <link rel="stylesheet" href="main.css" />
         <title>Document</title>
@@ -13,26 +13,76 @@
             <iframe name="Heading" src="../Component/Heading/index.html"> </iframe>
             <!-- option user-->
             <div id="list-options-user">
-                <a href="/FrontEnd/Page/Profile/index.html" target="Body" onclick="closeOption()" id="option-user">
+                <a
+                    href="/FrontEnd/Page/Profile/index.html"
+                    target="Body"
+                    onclick="closeOption()"
+                    id="option-user"
+                >
                     Hồ sơ thông tin
                 </a>
                 <a href="#" id="option-user" onclick="closeOption()"> Bạn </a>
-                <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" onclick="closeOption()" id="option-user"
+                <a
+                    href="/FrontEnd/Page/Login_Register/index.html"
+                    target="Body"
+                    onclick="closeOption()"
+                    id="option-user"
                     >Đăng xuất</a
                 >
-            </div>        
-            
+            </div>
+
             <div id="list-notifications">
-                
+                <div class="notification">
+                    <button class="btn_close">
+                        <i class="icon-close fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="top-item">
+                        <div class="left-item">
+                            <i class="icon-message fa-solid fa-message"></i>
+                            
+                        </div>
+                        <div class="right-item">
+                            <div class="message">Hãy nhập đội nào</div>
+                            <div class="name-player">DucVan (Bậc: 900)</div>
+                            <div class="feature">
+                                DucVan đã mở 1 phòng mới, 2 phút/ 1 lần đi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-item">
+                        <button class="submit-play">Join</button>
+                    </div>
+                </div>
+                <div class="notification">
+                    <button class="btn_close">
+                        <i class="icon-close fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="top-item">
+                        <div class="left-item">
+                            <i class="icon-message fa-solid fa-message"></i>
+                            
+                        </div>
+                        <div class="right-item">
+                            <div class="message">Hãy nhập đội nào</div>
+                            <div class="name-player">DucVan (Bậc: 900)</div>
+                            <div class="feature">
+                                DucVan đã mở 1 phòng mới, 2 phút/ 1 lần đi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-item">
+                        <button class="submit-play">Join</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="body-wrapper">
             <iframe name="Body" src="./Body/index.html" style="height: 100%"></iframe>
-            
+
             <!-- option navigation -->
             <div id="list-options-sidebar">
                 <a class="option-sidebar" href="../Lobby/index.html">
-                    <img class="icon" src="/FrontEnd/assets/img/Chess_icon.svg" alt="">
+                    <img class="icon" src="/FrontEnd/assets/img/Chess_icon.svg" alt="" />
                     <p class="title">Thi dấu</p>
                 </a>
                 <a class="option-sidebar">
@@ -44,7 +94,7 @@
                     <p class="title">Trò chuyện</p>
                 </a>
                 <a class="option-sidebar">
-                    <img class="icon" src="/FrontEnd/assets/img/Sword_icon.svg" alt="">
+                    <img class="icon" src="/FrontEnd/assets/img/Sword_icon.svg" alt="" />
                     <p class="title">Giải đấu</p>
                 </a>
                 <a class="option-sidebar">

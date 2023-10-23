@@ -21,11 +21,8 @@
     z-index: -1;
 }
 
-
-
-
 /* option user */
-#list-options-user{
+#list-options-user {
     position: fixed;
     display: none;
     flex-direction: column;
@@ -34,7 +31,7 @@
     right: 20px;
 }
 
-#option-user{
+#option-user {
     background-color: #121212;
     color: var(--text-color);
     padding: 12px 20px;
@@ -43,8 +40,7 @@
     font-size: 1.8rem;
 }
 
-
-#option-user::before{
+#option-user::before {
     content: "";
     border-width: 20px 20px;
     border-style: solid;
@@ -55,14 +51,13 @@
     z-index: -1;
 }
 
-#option-user:hover{
+#option-user:hover {
     background-color: var(--yellow-color);
     color: var(--background-color);
 }
 
-
 /* option navigation */
-#list-options-sidebar{
+#list-options-sidebar {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -75,23 +70,101 @@
     transition: 2s ease-in-out 0s;
 }
 
-.option-sidebar{
+.option-sidebar {
     display: flex;
     align-items: center;
     padding: 24px;
-    cursor: pointer; 
-    color: var(--text-color);   
+    cursor: pointer;
+    color: var(--text-color);
 }
 
-.option-sidebar:hover{
+.option-sidebar:hover {
     background: rgba(255, 255, 255, 0.07);
 }
 
-.icon{
+.icon {
     margin-right: 20px;
     font-size: 2.2rem;
 }
 
-.title{
+.title {
     font-size: 1.8rem;
+}
+
+/* notification */
+
+#list-notifications {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.notification {
+    position: relative;
+    width: 400px;
+    background-color: #232323;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 16px 27px,
+        rgba(0, 0, 0, 0.12) 0px 2px 49px, rgba(0, 0, 0, 0.2) 0px 8px 13px ;
+}
+
+.btn_close {
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    background-color: transparent;
+    padding: 8px;
+}
+
+.icon-close {
+    font-size: 2.6rem;
+    color: #7f7f7f;
+}
+
+.top-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-item {
+    margin-right: 12px;
+}
+
+.icon-message {
+    color: rgb(42, 170, 255);
+}
+
+.right-item div {
+    margin-bottom: 12px;
+}
+
+.message {
+    color: #7f7f7f;
+}
+
+.name-player {
+    color: var(--red-color);
+    font-size: 1.8rem;
+}
+
+.feature {
+}
+
+.bottom-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-play {
+    padding: 8px 16px;
+    background-color: var(--yellow-color);
+    color: var(--red-color);
+    border-radius: 4px;
+    margin-right: 10px;
 }
