@@ -20,6 +20,9 @@
 }
 
 .wrapper{
+}
+
+.main-nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,4 +92,10 @@
 
 .quiz:hover{
     color: var(--red-color);
+}
+
+
+
+.close{
+    display: none;
 }
