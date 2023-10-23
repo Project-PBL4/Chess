@@ -1,4 +1,4 @@
-#headingWrapper {
+#heading-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,13 +6,13 @@
     z-index: 9999;
     max-height: 100px;
 }
-#headingWrapper iframe {
+#heading-wrapper iframe {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 6px;
     height: 60px;
     overflow: visible;
 }
 
-#bodyWrapper {
+#body-wrapper {
     position: fixed;
     top: 60px;
     left: 0;
@@ -62,7 +62,7 @@
 
 
 /* option navigation */
-#list-option-sidebar{
+#list-options-sidebar{
     display: none;
     flex-direction: column;
     position: absolute;
