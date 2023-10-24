@@ -7,7 +7,7 @@
 }
 
 .content {
-    height: 620px;
+    height: calc(100% - 8%);
     width: 800px;
     background-color: var(--background-color);
     margin: 16px 20px 0px;
@@ -17,7 +17,7 @@
 }
 
 .navigation {
-    height: 620px;
+    height: calc(100% - 8%);
     width: 500px;
     background-color: var(--background-color);
     margin: 16px 20px 0px;
