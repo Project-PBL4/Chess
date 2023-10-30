@@ -213,10 +213,13 @@ body {
 
 .player {
     display: flex;
-    justify-content: flex-end;
     position: relative;
     background-color: var(--background-color);
     padding: 10px;
+}
+
+.player:last-child {
+    justify-content: flex-end;
 }
 
 .desc-player {
@@ -242,8 +245,15 @@ body {
 
 .flag-player {
     position: absolute;
-    right: 0px;
+}
+
+.flag-player {
+    right: -6px;
     top: 5px;
+}
+
+.player:first-child .flag-player {
+    left: 98px;
 }
 
 .flag-player img {
