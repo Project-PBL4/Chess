@@ -7,7 +7,11 @@ function showOptions() {
     }
 }
 
-function closeOption(){
+function closeOption(String){
     const listOptions = window.parent.document.getElementById("list-options-user");
     listOptions.style.display = "none";
+    if(String != null && String == "logout") {
+        sessionStorage.removeItem("userId");
+        window.location.reload();
+    }
 }

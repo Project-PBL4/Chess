@@ -15,54 +15,56 @@
                     <button class="login_btn active" onclick="changeToLogin()">Đăng nhập</button>
                     <button class="register_btn" onclick="changeToRegister()">Đăng kí</button>
                 </div>
-                <form action="" name="login_form" class="login_form open">
+                <div action="" name="login_form" class="login_form open">
                     <div class="info">
                         <label class="info_lable" for="username">Tên tài khoản hoặc email</label>
                         <input
                             class="username"
                             type="text"
-                            name="username"
+                            name="userName"
+                            onchange="checkInfo()"
                             placeholder="Tên tài khoản"
                         />
                     </div>
                     <div class="info">
-                        <label class="info_lable" for="password">Mật mã</label>
+                        <label class="info_lable" for="userPassword">Mật mã</label>
                         <input
                             class="password"
                             type="password"
-                            name="password"
+                            name="userPassword"
+                            onchange="checkInfo()"
                             placeholder="Mật mã"
                         />
                     </div>
-                    <button type="submit" class="login_submit">Đăng nhập</button>
                     <a class="forget-password">Quên mật khẩu?</a>
-                </form>
+                    <button type="submit" class="login_submit" onclick=submitForm() disabled>Đăng nhập</button>
+                </div>
 
-                <form action="" name="register_form" class="register_form">
+                <div action="" name="register_form" class="register_form">
                     <div class="info">
-                        <label class="info_lable" for="username">Tên tài khoản</label>
+                        <label class="info_lable" for="username_register">Tên tài khoản</label>
                         <input
-                            class="username"
+                            class="username_register"
                             type="text"
-                            name="username"
+                            name="username_register"
                             placeholder="Tên tài khoản"
                         />
                     </div>
                     <div class="info">
-                        <label class="info_lable" for="username">Tên tài khoản</label>
+                        <label class="info_lable" for="password_register">Mật mã</label>
                         <input
-                            class="username"
-                            type="text"
-                            name="username"
-                            placeholder="Tên tài khoản"
-                        />
-                    </div>
-                    <div class="info">
-                        <label class="info_lable" for="password">Mật mã</label>
-                        <input
-                            class="password"
+                            class="password_register"
                             type="password"
-                            name="password"
+                            name="password_register"
+                            placeholder="Mật mã"
+                        />
+                    </div>
+                    <div class="info">
+                        <label class="info_lable" for="password-again_register">Nhập lại mật mã</label>
+                        <input
+                            class="password-again_register"
+                            type="password"
+                            name="password-again_register"
                             placeholder="Mật mã"
                         />
                     </div>
@@ -77,8 +79,8 @@
                             <span class="nation-option" type="text" value="Thailand" onclick="selectNation(event)">Thailand</span>
                         </div>
                     </div>
-                    <button type="submit" class="register_submit">Đăng kí</button>
-                </form>
+                    <button type="submit" class="register_submit" onclick="addUser()">Đăng kí</button>
+                </div>
 
                 <div class="link_list">
                     <a href="#" class="link-webchat">
@@ -99,5 +101,7 @@
         </div>
         <script src="./assets/JS/changeForm.js"></script>
         <script src="./assets/JS/selectNation.js"></script>
+        <script src="./assets/JS/checkLogin.js"></script>
+        <script src="./assets/JS/addUser.js"></script>
     </body>
 </html>

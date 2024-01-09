@@ -13,6 +13,7 @@
             <iframe name="Heading" src="../Component/Heading/index.html"> </iframe>
             <!-- option user-->
             <div id="list-options-user">
+                <!-- onclick="closeOption()" -->
                 <a
                     href="/FrontEnd/Page/Profile/index.html"
                     target="Body"
@@ -25,10 +26,11 @@
                 <a
                     href="/FrontEnd/Page/Login_Register/index.html"
                     target="Body"
-                    onclick="closeOption()"
+                    onclick="closeOption('logout')"
                     id="option-user"
-                    >Đăng xuất</a
                 >
+                    Đăng xuất
+                </a>
             </div>
 
             <div id="list-notifications">
@@ -124,5 +126,6 @@
             </div>
         </div>
         <script src="./assets/JS/closeNotification.js"></script>
+        <script src="/FrontEnd/Page/Component/Heading/assets/JS/showOptions.js"></script>
     </body>
 </html>

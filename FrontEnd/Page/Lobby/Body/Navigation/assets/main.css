@@ -283,11 +283,11 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--text-color);
-    background-color: #373737;
+    background-color: #272727;
 }
 
 .active {
-    background-color: #272727;
+    background-color: #373737;
 }
 
 .message_btn i,

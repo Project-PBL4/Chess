@@ -11,11 +11,20 @@
     <body>
         <div class="wrapper">
             <div class="nav-logo">
-                <button onclick="actionNavBtn()" class="sidebar_btn"><i class="icon-bar fa-solid fa-bars"></i></button>
+                <button onclick="actionNavBtn()" class="sidebar_btn">
+                    <i class="icon-bar fa-solid fa-bars"></i>
+                </button>
                 <a class="link-home" href="/FrontEnd/Page/Lobby/index.html">CoTuong</a>
             </div>
             <div class="nav-item-right">
-                <!-- <a href="/FrontEnd/Page/Login_Register/index.html" target="Body" class="login_link open" onclick=changeToLobby()>Đăng Nhập</a> -->
+                <a
+                    href="/FrontEnd/Page/Login_Register/index.html"
+                    target="Body"
+                    class="login_link"
+                    id="login_link"
+                    onclick="changeToLobby()"
+                    >Đăng Nhập</a
+                >
                 <a
                     href="/FrontEnd/Page/Lobby/Body/index.html"
                     target="Body"
@@ -31,7 +40,12 @@
                     />
                     Tiếng Việt
                 </button>
-                <button href="/FrontEnd/Page/Profile/index.html" target="Body" class="profile-user" onclick="showOptions()">
+                <button
+                    href="/FrontEnd/Page/Profile/index.html"
+                    target="Body"
+                    class="profile-user"
+                    onclick="showOptions()"
+                >
                     <img
                         class="user_img"
                         src="/FrontEnd/assets/img/User-avatar.jpg"
@@ -45,4 +59,5 @@
     <script src="./assets/JS/changeContent.js"></script>
     <script src="./assets/JS/showOptions.js"></script>
     <script src="./assets/JS/openAndCloseNavBtn.js"></script>
+    <script src="./assets/JS/checkSession.js"></script>
 </html>
