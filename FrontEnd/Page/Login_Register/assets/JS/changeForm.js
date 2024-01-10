@@ -12,6 +12,7 @@ function changeToLogin(){
 }
 
 function changeToRegister(){
+    cx(".warning-failedLogin").style.display = "none";
     login_form.classList.remove('open');
     login_btn.classList.remove('active');    
     register_btn.classList.add('active');

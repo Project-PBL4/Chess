@@ -40,6 +40,7 @@
                     <button type="submit" class="login_submit" onclick=submitForm()>Đăng nhập</button>
                 </div>
                 <p class="warning-infor warning-failedLogin">Tên tài khoản hoặc mật khẩu không đúng</p>
+                
                 <div action="" name="register_form" class="register_form">
                     <div class="info">
                         <label class="info_lable" for="username_register">Tên tài khoản</label>
@@ -66,8 +67,11 @@
                             type="password"
                             name="password-again_register"
                             placeholder="Mật mã"
+                            onchange="checkPassword()"
                         />
                     </div>
+                    <p class="warning-infor warning-differentPassword">Mật khẩu không khớp</p>
+
                     <div class="info wrapper-chosing-nation">
                         <label class="info" for="nation">Quốc gia</label>
                         <input class="nation" type="text" placeholder="Quốc gia/Khu vực" />
@@ -81,7 +85,7 @@
                     </div>
                     <button type="submit" class="register_submit" onclick="addUser()">Đăng kí</button>
                 </div>
-
+                <p class="warning-infor warning-lackInfor">Hãy điền đầy đủ thông tin</p>
                 <div class="link_list">
                     <a href="#" class="link-webchat">
                         <button class="wrapper_icon-webchat">
