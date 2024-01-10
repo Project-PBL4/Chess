@@ -1,6 +1,7 @@
 function addUser() {
     const usernameEle = cx(".username_register");
     const passwordEle = cx(".password_register");
+    const emailEle = cx(".email");
     const countryEle = cx(".nation");
     if (checkInforRegister(usernameEle, passwordEle, countryEle) === true && checkPassword() === true) {
         // Tạo một đối tượng Date đại diện cho thời gian hiện tại
@@ -13,7 +14,9 @@ function addUser() {
 
         var formData = {
             userName: usernameEle.value,
+            name: usernameEle.value,
             userPassword: passwordEle.value,
+            userEmail: emailEle.value,
             country: countryEle.value,
             joiningDate: day + "/" + month + "/" + year,
             totalLoss: 0,

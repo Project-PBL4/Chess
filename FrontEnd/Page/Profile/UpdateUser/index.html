@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/FrontEnd/assets/fontawesome-free-6.4.2-web/css/all.min.css" />
+        <link rel="stylesheet" href="/FrontEnd/assets/GlobalStyle/style.css" />
+        <link rel="stylesheet" href="./assets/main.css" />
+    </head>
+    <body>
+        <div class="background-img-cover">
+            <div class="background-color-cover">
+                <div class="wrapper">
+                    <div class="header">
+                        <div class="left-item">
+                            <img src="/FrontEnd/assets/img/User-avatar.jpg" alt="" srcset="" class="avatar" />
+                        </div>
+                        <div class="right-item">
+                            <input readonly value="van260903" class="title-name"/>
+                            <div class="extra-infor">
+                                <div class="point">1200</div>
+                                <img src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png" alt="" srcset="" class="flag"/>
+                            </div>
+                            <input type="file" class="change-avatar" value="Thêm ảnh"></input>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="individual">
+                            <label for="" class="infor">Hồ sơ thông tin</label>
+                            <input
+                                type="text"
+                                class="email"
+                                name=""
+                                value="nguyenducvan260903@gmail.com"
+                                readonly
+                            />
+                            <input type="text" class="name" name="" id="" value="van260903" />
+                            <div class="info wrapper-chosing-nation">
+                                <input class="nation" type="text" value="Viet Nam" />
+                                <i
+                                    class="icon-down fa-solid fa-angle-down"
+                                    onclick="openAndCloseNation()"
+                                ></i>
+                                <div class="select-nations">
+                                    <span
+                                        class="nation-option"
+                                        type="text"
+                                        value="Vietnam"
+                                        onclick="selectNation(event)"
+                                        >Vietnam</span
+                                    >
+                                    <span
+                                        class="nation-option"
+                                        type="text"
+                                        value="Japanese"
+                                        onclick="selectNation(event)"
+                                        >Japanese</span
+                                    >
+                                    <span
+                                        class="nation-option"
+                                        type="text"
+                                        value="Chinese"
+                                        onclick="selectNation(event)"
+                                        >Chinese</span
+                                    >
+                                    <span
+                                        class="nation-option"
+                                        type="text"
+                                        value="Thailand"
+                                        onclick="selectNation(event)"
+                                        >Thailand</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <p class="warning-infor warning-lackInfor">Hãy điền đầy đủ thông tin</p>
+
+                        <div class="story">
+                            <label for="" class="infor">Tiểu sử</label>
+                            <textarea placeholder="Tiểu sử" class="content-story"></textarea>
+                        </div>
+                        <button onclick="updateUser()" class="save_btn">Lưu</button>
+                        <div class="setting-user">
+                            <label for="" class="infor">Cài đặt tài khoản</label>
+                            <button class="delete_btn">Xoá tài khoản</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/JS/selectNation.js"></script>
+    <script src="./assets/JS/loadUpdateUser.js"></script>
+    <script src="./assets/JS/udpateUser.js"></script>
+</html>

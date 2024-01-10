@@ -26,8 +26,8 @@ public class Database {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
-//              User userA = new User("ducvan", "123456", "nguyenducvan260903@gmail.com", "VietNam", 100, 50, 30, 20, 50, 2000, "2/12/2022", "Common baby");
-//              User userB = new User("kieunhi", "123456", "kieunhi2003@gmail.com", "Japanese",50, 50, 0, 0, 100, 3000, "12/9/2023", "I love you");
+//              User userA = new User("ducvan",  "123456", "Nguyen Duc Van", "nguyenducvan260903@gmail.com", "VietNam", 100, 50, 30, 20, 50, 2000, "2/12/2022", "Common baby");
+//              User userB = new User("kieunhi", "123456", "Ngo Kieu Nhi", "kieunhi2003@gmail.com", "Japanese",50, 50, 0, 0, 100, 3000, "12/9/2023", "I love you");
 //              logger.info("insert data: " + userRepository.save(userA));
 //              logger.info("insert data: " + userRepository.save(userB));
             }

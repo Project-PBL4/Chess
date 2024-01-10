@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tutorial.apidemo.models.User;
 import com.tutorial.apidemo.repositories.UserRepository;
 import com.tutorial.apidemo.models.ResponseObject;
+import com.tutorial.apidemo.models.UpdateUser;
 
 @RestController
 @RequestMapping(path = "api/v1/users")
@@ -59,28 +61,24 @@ public class UserController {
         if (!foundUser.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).body(
                     new ResponseObject("failed", "Username already taken", ""));
-        };
+        }
         return ResponseEntity.status(HttpStatus.OK).body(
                 new ResponseObject("ok", "Insert user successfully", repository.save(newUser)));
     }
 
-    // @PutMapping("/{id}")
-    // ResponseEntity<ResponseObject> updateUser(@RequestBody User newUser,
-    // @PathVariable Long id) {
-    // User updateUser = repository.findById(id)
-    // .map(user -> {
-    // user.setUserName(newUser.getUserName());
-    // user.setUserYear(newUser.getUserYear());
-    // user.setPrice(newUser.getPrice());
-    // user.setUrl(newUser.getUrl());
-    // return repository.save(user);
-    // }).orElseGet(() -> {
-    // newUser.setId(id);
-    // return repository.save(newUser);
-    // });
-    // return ResponseEntity.status(HttpStatus.OK).body(
-    // new ResponseObject("ok", "Udpate user successfully", updateUser));
-    // }
+    @PutMapping("/{id}")
+    ResponseEntity<ResponseObject> updateUser(@RequestBody UpdateUser newUser,
+            @PathVariable Long id) {
+        Optional<Object> updateUser = repository.findById(id)
+                .map(user -> {
+                    user.setName(newUser.getName());
+                    user.setCountry(newUser.getCountry());
+                    user.setStory(newUser.getStory());
+                    return repository.save(user);
+                });
+        return ResponseEntity.status(HttpStatus.OK).body(
+                new ResponseObject("ok", "Udpate user successfully", updateUser));
+    }
 
     @DeleteMapping("/{id}")
     ResponseEntity<ResponseObject> deleteUser(@PathVariable Long id) {

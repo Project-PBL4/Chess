@@ -1,4 +1,7 @@
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     
     // Gửi yêu cầu GET đến API
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // ... (cập nhật thêm phần tử khác)
 
         // Cập nhật nội dung HTML với dữ liệu từ user
-        nameElement.textContent = user.userName;
+        nameElement.textContent = user.name;
         pointElement.textContent = user.countRank;
         storyElement.textContent = "Phát ngôn: " + user.story;
         joningDateElement.textContent = "Thành viên kể từ: " + user.joiningDate;
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         totalVictoryElement.textContent = user.totalWin;
         totalDefautElement.textContent = user.totalLoss;
         totalDrawElement.textContent = user.totalTie;
-        victoryPercentElement.textContent = user.totalWin / user.totalRound * 100 + "%";
+        victoryPercentElement.textContent = user.totalRound != 0 ? user.totalWin / user.totalRound * 100 : 0 + "%";
         averageRankElement.textContent = user.countRank;
 
         // Cập nhật các phần tử khác tương tự
