@@ -21,10 +21,10 @@
                         <input
                             class="username"
                             type="text"
-                            name="userName"
-                            onchange="checkInfo()"
+                            name="username"
                             placeholder="Tên tài khoản"
                         />
+                        <p class="warning-infor warning-username">Bạn chưa nhập tên tài khoản</p>
                     </div>
                     <div class="info">
                         <label class="info_lable" for="userPassword">Mật mã</label>
@@ -32,14 +32,14 @@
                             class="password"
                             type="password"
                             name="userPassword"
-                            onchange="checkInfo()"
                             placeholder="Mật mã"
                         />
+                        <p class="warning-infor warning-passowrd">Bạn chưa nhập mật mã</p>
                     </div>
                     <a class="forget-password">Quên mật khẩu?</a>
-                    <button type="submit" class="login_submit" onclick=submitForm() disabled>Đăng nhập</button>
+                    <button type="submit" class="login_submit" onclick=submitForm()>Đăng nhập</button>
                 </div>
-
+                <p class="warning-infor warning-failedLogin">Tên tài khoản hoặc mật khẩu không đúng</p>
                 <div action="" name="register_form" class="register_form">
                     <div class="info">
                         <label class="info_lable" for="username_register">Tên tài khoản</label>

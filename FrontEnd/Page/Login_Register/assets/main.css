@@ -61,6 +61,11 @@
     margin-bottom: 16px;
 }
 
+.warning-infor{
+    color: red;
+    display: none;
+}
+
 .list-nation, input, span {
     padding: 12px;
     color: var(--text-color);
