@@ -1,9 +1,10 @@
 .wrapper {
     background-image: url(/FrontEnd/assets/img/Black_background_img.jpg);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 0;
 }
 
 .container {

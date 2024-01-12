@@ -2,6 +2,7 @@
     height: 100%;
     background-image: url(/FrontEnd/assets/img/Black_background_img.jpg);
     background-size: cover;
+    position: relative;
 }
 input {
     background-color: transparent;
@@ -96,7 +97,7 @@ input {
     flex-direction: column;
     width: 100%;
 }
-.individual input{
+.individual input {
     flex: 1;
     background: rgba(255, 255, 255, 0.05);
 
@@ -125,20 +126,20 @@ input {
     background-color: rgba(255, 255, 255, 0.001) !important;
 }
 
-.wrapper-chosing-nation{
+.wrapper-chosing-nation {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.icon-down{
+.icon-down {
     position: absolute;
     right: 20px;
     top: 12px;
     cursor: pointer;
 }
 
-.select-nations{
+.select-nations {
     position: absolute;
     top: 40px;
     right: 0;
@@ -148,7 +149,7 @@ input {
     z-index: 999;
 }
 
-.nation-option{
+.nation-option {
     flex: 1;
     background-color: var(--text-color);
     color: var(--background-color);
@@ -159,17 +160,17 @@ input {
     padding: 10px;
 }
 
-.nation-option:hover{
+.nation-option:hover {
     cursor: pointer;
     background-color: rgb(217, 218, 221);
 }
 
-.nation-option:first-child{
+.nation-option:first-child {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
-.nation-option:last-child{
+.nation-option:last-child {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
@@ -211,7 +212,7 @@ input {
     box-shadow: rgba(65, 69, 88, 0.1) 0px 7px 14px, rgba(0, 0, 0, 0.07) 0px 3px 6px;
     font-weight: 500;
 }
-.warning-infor{
+.warning-infor {
     margin-top: 10px;
     color: red;
     display: none;
@@ -222,11 +223,11 @@ input {
     flex-direction: column;
 }
 
-.open{
+.open {
     display: flex;
 }
 
-.delete_btn{
+.delete_btn {
     cursor: pointer;
     max-width: calc(100% - 74%);
     background: var(--background-color);
@@ -234,15 +235,94 @@ input {
     border: 2px solid rgba(255, 255, 255, 0.87);
     padding: 10px 15px;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     line-height: normal;
     height: auto;
-    text-transform: capitalize;
     font-size: 16px;
     border-radius: 6px;
-    box-shadow: rgba(65, 69, 88, 0.1) 0px 7px 14px, rgba(0, 0, 0, 0.07) 0px 3px 6px;
     font-weight: 500;
+    box-shadow: rgba(65, 69, 88, 0.1) 0px 7px 14px, rgba(0, 0, 0, 0.07) 0px 3px 6px;
+}
+
+.warning-delete {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(137, 136, 135, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.model-wrapper {
+    position: relative;
+    padding: 14px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.6px solid rgba(255, 255, 255, 0.87);
+    box-shadow: rgba(65, 69, 88, 0.1) 0px 7px 14px, rgba(0, 0, 0, 0.07) 0px 3px 6px;
+}
+
+.model-wrapper .title {
+    width: 100%;
+    color: var(--red-color);
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 2.4rem;
+    flex: 1;
+    border-bottom: 0.6px solid rgba(255, 255, 255, 0.87);
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: rgb(77, 86, 87);
+}
+
+.model-wrapper .description{
+    padding: 8px 8px 16px;
+    font-size: 2rem;
+}
+
+
+.model-wrapper .delete_submit, .close_btn{
+    cursor: pointer;
+    width: 100%;
+    background: var(--red-color);
+    color: rgba(255, 255, 255, 0.87);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    height: auto;
+    font-size: 2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    margin: 6px 0;
+}
+
+.model-wrapper .close_btn{
+    background-color: var(--background-color);
+    border: 2px solid rgba(255, 255, 255, 0.87);
+}
+
+.model-wrapper .close_btn:hover{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+.model-wrapper .delete_submit:hover{
+    background: rgb(198, 74, 71);
+}
+
+.open{
+    display: flex;
 }

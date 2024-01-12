@@ -14,15 +14,25 @@
                 <div class="wrapper">
                     <div class="header">
                         <div class="left-item">
-                            <img src="/FrontEnd/assets/img/User-avatar.jpg" alt="" srcset="" class="avatar" />
+                            <img
+                                src="/FrontEnd/assets/img/User-avatar.jpg"
+                                alt=""
+                                srcset=""
+                                class="avatar"
+                            />
                         </div>
                         <div class="right-item">
-                            <input readonly value="van260903" class="title-name"/>
+                            <input readonly value="van260903" class="title-name" />
                             <div class="extra-infor">
                                 <div class="point">1200</div>
-                                <img src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png" alt="" srcset="" class="flag"/>
+                                <img
+                                    src="/FrontEnd/assets/img/Flag_of_Vietnam.svg.png"
+                                    alt=""
+                                    srcset=""
+                                    class="flag"
+                                />
                             </div>
-                            <input type="file" class="change-avatar" value="Thêm ảnh"></input>
+                            <input type="file" class="change-avatar" value="Thêm ảnh" />
                         </div>
                     </div>
                     <div class="body">
@@ -83,9 +93,20 @@
                         <button onclick="updateUser()" class="save_btn">Lưu</button>
                         <div class="setting-user">
                             <label for="" class="infor">Cài đặt tài khoản</label>
-                            <button class="delete_btn">Xoá tài khoản</button>
+                            <button class="delete_btn" onclick="openWarningModel()">Xoá tài khoản</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="warning-delete">
+                <div class="model-wrapper">
+                    <div class="title">Xoá tài khoản</div>
+                    <i class="close-icon fa-solid fa-x" onclick="closeWarningModel()"></i>
+                    <span class="description">
+                        We are very sorry that you are not satisfied with our game
+                    </span>
+                    <div class="delete_submit" onclick="deleteUser()">Xoá bỏ</div>
+                    <div class="close_btn" onclick="closeWarningModel()">Huỷ bỏ</div>
                 </div>
             </div>
         </div>
@@ -93,4 +114,5 @@
     <script src="./assets/JS/selectNation.js"></script>
     <script src="./assets/JS/loadUpdateUser.js"></script>
     <script src="./assets/JS/udpateUser.js"></script>
+    <script src="./assets/JS/deleteUser.js"></script>
 </html>
