@@ -3,10 +3,15 @@ const passwordElement = cx(".password");
 const warningFailedLoginEle = cx(".warning-failedLogin");
 function submitForm() {
     if (checkInfo() == true) {
-        var formData = {
-            userName: usernameElement.value,
-            userPassword: passwordElement.value,
-        };
+        var formData = usernameElement.value.includes("@gmail.com")
+            ? {
+                  userEmail: usernameElement.value,
+                  userPassword: passwordElement.value,
+              }
+            : {
+                  userName: usernameElement.value,
+                  userPassword: passwordElement.value,
+              };
         fetch("http://localhost:8080/api/v1/users/checkLogin", {
             method: "POST",
             body: JSON.stringify(formData),
@@ -17,7 +22,7 @@ function submitForm() {
             .then((response) => {
                 if (!response.ok) {
                     warningFailedLoginEle.style.display = "flex";
-                    throw new Error('Login failed');
+                    throw new Error("Login failed");
                 }
                 return response.json();
             })

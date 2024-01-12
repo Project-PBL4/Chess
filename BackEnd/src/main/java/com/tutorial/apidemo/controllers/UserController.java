@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tutorial.apidemo.models.User;
 import com.tutorial.apidemo.repositories.UserRepository;
 import com.tutorial.apidemo.models.ResponseObject;
-import com.tutorial.apidemo.models.UpdateUser;
+import com.tutorial.apidemo.models.TemporaryUser;
 
 @RestController
 @RequestMapping(path = "api/v1/users")
@@ -42,9 +42,16 @@ public class UserController {
     }
 
     @PostMapping("/checkLogin")
-    ResponseEntity<ResponseObject> checkLogin(@RequestBody User newUser) {
-        List<User> foundUser = repository.findByUserNameAndUserPassword(newUser.getUserName().trim(),
-                newUser.getUserPassword().trim());
+    ResponseEntity<ResponseObject> checkLogin(@RequestBody TemporaryUser newUser) {
+        List<User> foundUser;
+        if(newUser.getUserName() == null) {
+            foundUser = repository.findByUserEmailAndUserPassword(newUser.getUserEmail().trim(),
+                    newUser.getUserPassword().trim());
+        }else {
+            foundUser = repository.findByUserNameAndUserPassword(newUser.getUserName().trim(),
+                    newUser.getUserPassword().trim());
+        }
+;
         if (!foundUser.isEmpty()) {
             System.out.println(foundUser);
             return ResponseEntity.status(HttpStatus.OK).body(
@@ -67,7 +74,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    ResponseEntity<ResponseObject> updateUser(@RequestBody UpdateUser newUser,
+    ResponseEntity<ResponseObject> updateUser(@RequestBody TemporaryUser newUser,
             @PathVariable Long id) {
         Optional<Object> updateUser = repository.findById(id)
                 .map(user -> {
