@@ -22,7 +22,8 @@ import com.tutorial.apidemo.models.TemporaryUser;
 
 @RestController
 @RequestMapping(path = "api/v1/users")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+//@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class UserController {
     @Autowired
     private UserRepository repository;
@@ -44,6 +45,7 @@ public class UserController {
     @PostMapping("/checkLogin")
     ResponseEntity<ResponseObject> checkLogin(@RequestBody TemporaryUser newUser) {
         List<User> foundUser;
+        System.out.println(newUser.getUserName() + newUser.getUserPassword());
         if(newUser.getUserName() == null) {
             foundUser = repository.findByUserEmailAndUserPassword(newUser.getUserEmail().trim(),
                     newUser.getUserPassword().trim());
